@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App-header {
+  background-color: #1e293b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f8fafc;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 2px solid #64748b;
+  font-size: 24px;
+  font-weight: bold;
+  color: #334155;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.square:hover {
+  background-color: #f1f5f9;
+}
+
+.square.winning {
+  background-color: #34d399; /* Green highlight for winning squares */
+  color: white;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.game-info button {
+  background-color: #2563eb;
+  color: #f8fafc;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.game-info button:hover {
+  background-color: #1e40af;
+}
+
+.reset-button {
+  margin-top: 20px;
+  background-color: #ef4444;
+}
+
+.reset-button:hover {
+  background-color: #b91c1c;
+}
